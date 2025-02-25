@@ -25,6 +25,7 @@ const app = express();
 app.use(cors());
 app.use(express.json()) // json data can be send in req and res
 app.use(morgan('dev'))
+app.use(express.static(path.join(__dirname, 'client/dist')));
 
 // routes
 app.use('/api/v1/auth', authRoutes);
@@ -65,13 +66,9 @@ app.post("/api/payment/create-checkout-session", async (req, res) => {
 });
 
 
-
-// rest api
-app.get('/', (req, res) => {
-    res.send({
-        message: 'Welcome in ecomerce app'
-    })
-})
+app.use('*', function(req, res) {
+    res.sendFile(path.join(__dirname, 'client/dist/index.html'));
+});
 
 // port
 const PORT = process.env.PORT;

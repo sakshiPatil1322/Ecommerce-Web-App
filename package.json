@@ -7,7 +7,7 @@
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "cd client && npx vite",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run start\" \"npm run client\""
   },
   "keywords": [],
   "author": "Patil Sakshi",
