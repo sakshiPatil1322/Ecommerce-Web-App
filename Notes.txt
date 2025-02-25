@@ -1,0 +1,23 @@
+2:03-2:05 //about,privacy policy,contact us basic pages skipped
+
+
+ <li><NavLink to="/" className="dropdown-item">Women's Wrist Watch</NavLink></li>
+ <li><NavLink to="/" className="dropdown-item">Wall Clock</NavLink></li>
+ <li><hr className="dropdown-divider" /></li>
+ <li><NavLink to="/" className="dropdown-item">All</NavLink></li>
+
+9:31
+
+
+${import.meta.env.VITE_API_URL}
+
+// update photo
+http://localhost:5173/dashboard/admin/update-product/lexico
+
+
+
+// Remaning work
+
+User Daashboard
+Add to cart
+Users page in Adnim dashboard
